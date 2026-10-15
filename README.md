@@ -35,11 +35,11 @@ bool clamp_range(int value, int lower, int upper, int *result) {
         return false;
     }
     if (value < lower) {
-        *result = lower; // Sub limita inferioară
+        *result = lower;
     } else if (value > upper) {
-        *result = upper; // Peste limita superioară
+        *result = upper;
     } else {
-        *result = value; // În interiorul intervalului
+        *result = value;
     }
     return true;
     }
