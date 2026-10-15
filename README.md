@@ -13,8 +13,6 @@ void swap(int *left, int *right) {
 #include <stddef.h>
 
 bool minmax(int first, int second, int *minimum, int *maximum) {
-    // 1. Verificare de siguranță (Contract Guard)
-    // Returnează false FĂRĂ modificări dacă un pointer e null sau indică aceeași adresă
     if (minimum == NULL || maximum == NULL || minimum == maximum) {
         return false;
     }
